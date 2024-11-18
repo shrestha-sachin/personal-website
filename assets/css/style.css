@@ -399,16 +399,6 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
-.new-year-message {
-  position: absolute;
-  top: 40%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  text-align: right;
-  animation: colorBlink 5s infinite;
-}
 
 @keyframes colorBlink {
   0%,
