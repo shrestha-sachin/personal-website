@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("valentine-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Pacifico", cursive;
+  color: #ff4d6d;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 77, 109, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+#name-input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ff4d6d;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#submit-name,
+.btn {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#submit-name:hover,
+.btn:hover {
+  background: #ff1a40;
+  transform: scale(1.1);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.heart {
+  position: absolute;
+  color: #ff4d6d;
+  animation: heartBeat 1s infinite;
+}
