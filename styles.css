@@ -358,10 +358,7 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: auto;
@@ -422,14 +419,13 @@ body {
   font-weight: 600;
 }
 
-.project-buttons {
+.project-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.btn-demo,
-.btn-code {
+.btn {
   background-color: var(--button-bg);
   color: white;
   padding: 0.6rem 1.2rem;
@@ -440,12 +436,12 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn-demo:hover,
-.btn-code:hover {
+.btn:hover {
   background-color: var(--button-hover);
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Contact Page Styles */
 
