@@ -355,11 +355,14 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-  max-width: 300px;
-  margin: 0 auto;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive columns */
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 .project-card {
